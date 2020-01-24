@@ -1,4 +1,7 @@
 # wiki
+
+[![Join the chat at https://gitter.im/glaucuslinux/wiki](https://badges.gitter.im/glaucuslinux/wiki.svg)](https://gitter.im/glaucuslinux/wiki?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 glaucus's wiki
 
 ## Mirrors
