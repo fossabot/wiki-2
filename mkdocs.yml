@@ -1,0 +1,36 @@
+site_name: glaucus Wiki
+nav:
+  - Home: index.md
+  - History: history.md
+  - Install: install.md
+  - Naming Convention: convention.md
+  - QEMU: qemu.md
+  - TODO: todo.md
+site_url: https://wiki.glaucuslinux.org/
+site_description: glaucus Wiki
+site_author: Firas Khalil Khana
+theme:
+  name: material
+  custom_dir: custom
+  font:
+    text: 'Ubuntu'
+    code: 'Ubuntu Mono'
+  favicon: 'images/favicon.png'
+  logo: 'images/logo.svg'
+  palette:
+    primary: Blue Grey
+    accent: Amber
+copyright: "<p>Copyright © 2019-2020, <a href='mailto:firasuke@glaucuslinux.org'>Firas Khalil Khana</a></p>
+<p>Distributed under the terms of the <a href='https://github.com/glaucuslinux/glaucus/blob/master/LICENSE'>ISC</a> License</p>
+<p>Linux® is the registered trademark of Linus Torvalds in the U.S. and other countries.</p>"
+repo_url: https://github.com/glaucuslinux/glaucus
+repo_name: glaucuslinux/glaucus
+edit_uri: ''
+extra_css:
+  - 'assets/extra.css'
+strict: true
+remote_branch: 'master'
+plugins:
+  - search
+  - minify:
+      minify_html: true
