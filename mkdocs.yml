@@ -1,11 +1,55 @@
 site_name: glaucus Wiki
 nav:
   - Home: index.md
-  - History: history.md
-  - Install: install.md
-  - Naming Convention: convention.md
-  - QEMU: qemu.md
-  - TODO: todo.md
+  - Preface:
+    - i. Foreword: preface/foreword.md
+    - ii. Audience: preface/audience.md
+    - iii. glaucus Target Architectures: preface/glaucus-target-architectures.md
+    - iv. glaucus and Standards: preface/glaucus-and-standards.md
+    - v. Rationale for Cerata: preface/rationale-for-cerata.md
+    - vi. Prerequisites: preface/prerequisites.md
+    - vii. Typography: preface/typography.md
+    - viii. Structure: preface/structure.md
+    - ix. Errata: preface/errata.md
+  - I. Introduction:
+    - 1. Introduction:
+      - 1.1. How to Build glaucus: introduction/introduction/how-to-build-glaucus.md
+      - 1.2. Resources: introduction/introduction/resources.md
+      - 1.3. Help: introduction/introduction/help.md
+  - II. Preparing for the Build:
+    - 2. Preparing the Host System:
+      - 2.1. Introduction: preparing-for-the-build/preparing-the-host-system/introduction.md
+      - 2.2. Host System Requirements: preparing-for-the-build/preparing-the-host-system/host-system-requirements.md
+      - 2.3. Building glaucus in Stages: preparing-for-the-build/preparing-the-host-system/building-glaucus-in-stages.md
+    - 3. Cerata and Patches:
+      - 3.1. Introduction: preparing-for-the-build/cerata-and-patches/introduction.md
+      - 3.2. All Cerata: preparing-for-the-build/cerata-and-patches/all-cerata.md
+      - 3.3. Needed Patches: preparing-for-the-build/cerata-and-patches/needed-patches.md
+    - 4. Final Preparations:
+      - 4.1. Introduction: preparing-for-the-build/final-preparations/introduction.md
+      - 4.2. Creating the $GLAT Directory: preparing-for-the-build/final-preparations/creating-the-glat-directory.md
+      - 4.3. Adding the glaucus User: preparing-for-the-build/final-preparations/adding-the-glaucus-user.md
+      - 4.4. Setting Up the Environment: preparing-for-the-build/final-preparations/setting-up-the-environment.md
+      - 4.5. About SBUs: preparing-for-the-build/final-preparations/about-sbus.md
+      - 4.6. About the Test Suites: preparing-for-the-build/final-preparations/about-the-test-suites.md
+    - 5. Constructing a Temporary System:
+      - 5.1. Introduction: preparing-for-the-build/constructing-a-temporary-system/introduction.md
+      - 5.2. Toolchain Technical Notes: preparing-for-the-build/constructing-a-temporary-system/toolchain-technical-notes.md
+      - 5.3. General Compilation Instructions: preparing-for-the-build/constructing-a-temporary-system/general-compilation-instructions.md
+      - 5.5. Stripping: preparing-for-the-build/constructing-a-temporary-system/stripping.md
+      - 5.6. Changing Ownership: preparing-for-the-build/constructing-a-temporary-system/changing-ownership.md
+  - III. Building glaucus:
+    - 6. Installing Basic System Cerata:
+      - 6.1. Introduction: building-glaucus/installing-basic-system-cerata/introduction.md
+      - 6.2. Preparing Virtual Kernel File Systems: building-glaucus/installing-basic-system-cerata/preparing-virtual-kernel-file-systems.md
+      - 6.3. Package Management: building-glaucus/installing-basic-system-cerata/package-management.md
+      - 6.4. Entering the Chroot Environment: building-glaucus/installing-basic-system-cerata/entering-the-chroot-environment.md
+      - 6.5. Creating Directories: building-glaucus/installing-basic-system-cerata/creating-directories.md
+      - 6.6. Creating Essential Files and Symlinks: building-glaucus/installing-basic-system-cerata/creating-essential-files-and-symlinks.md
+      - 6.8. Adjusting the Toolchain: building-glaucus/installing-basic-system-cerata/adjusting-the-toolchain.md
+      - 6.10. About Debugging Symbols: building-glaucus/installing-basic-system-cerata/about-debugging-symbols.md
+      - 6.11. Stripping Again: building-glaucus/installing-basic-system-cerata/stripping-again.md
+      - 6.12. Cleaning Up: building-glaucus/installing-basic-system-cerata/cleaning-up.md
 site_url: https://wiki.glaucuslinux.org/
 site_description: glaucus Wiki
 site_author: Firas Khalil Khana
@@ -15,8 +59,8 @@ theme:
   font:
     text: 'Ubuntu'
     code: 'Ubuntu Mono'
-  favicon: 'images/favicon.png'
-  logo: 'images/logo.svg'
+  favicon: 'img/favicon.png'
+  logo: 'img/logo.svg'
   palette:
     primary: Blue Grey
     accent: Amber
@@ -27,7 +71,7 @@ repo_url: https://github.com/glaucuslinux/glaucus
 repo_name: glaucuslinux/glaucus
 edit_uri: ''
 extra_css:
-  - 'assets/extra.css'
+  - 'css/extra.css'
 strict: true
 remote_branch: 'master'
 plugins:

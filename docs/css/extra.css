@@ -65,6 +65,10 @@ button[data-md-color-accent='amber'] {
   color: #b69460
 }
 
+[data-md-color-accent='amber'] .md-nav__link::selection {
+  background: none
+}
+
 [data-md-color-accent='amber'] .md-typeset .footnote li:hover .footnote-backref:hover,
 [data-md-color-accent='amber'] .md-typeset .footnote li:target .footnote-backref {
   color: #b69460
