@@ -1,4 +1,5 @@
 # wiki
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/a5153b320f664cff8a9d7bd9859c90b2)](https://app.codacy.com/gh/glaucuslinux/wiki?utm_source=github.com&utm_medium=referral&utm_content=glaucuslinux/wiki&utm_campaign=Badge_Grade_Dashboard)
 [![Join the chat at https://gitter.im/glaucuslinux/wiki](
 https://badges.gitter.im/glaucuslinux/wiki.svg)](
 https://gitter.im/glaucuslinux/wiki?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
@@ -6,9 +7,10 @@ https://gitter.im/glaucuslinux/wiki?utm_source=badge&utm_medium=badge&utm_campai
 glaucus's wiki
 
 ## Mirrors
-* [GitHub](https://github.com/glaucuslinux/wiki)
-* [GitLab](https://gitlab.com/glaucuslinux/wiki)
-* [NotABug](https://notabug.org/glaucuslinux/wiki)
-* [BitBucket](https://bitbucket.org/glaucuslinux/wiki)
-* [Framagit](https://framagit.org/glaucuslinux/wiki)
-* [SourceForge](https://git.code.sf.net/p/glaucuslinux/wiki)
+*   [BitBucket](https://bitbucket.org/glaucuslinux/wiki)
+*   [Framagit](https://framagit.org/glaucuslinux/wiki)
+*   [GitHub](https://github.com/glaucuslinux/wiki)
+*   [GitLab](https://gitlab.com/glaucuslinux/wiki)
+*   [NotABug](https://notabug.org/glaucuslinux/wiki)
+*   [SourceForge](https://git.code.sf.net/p/glaucuslinux/wiki)
+*   [SourceHut](https://git.sr.ht/~glaucuslinux/wiki)
