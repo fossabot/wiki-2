@@ -194,3 +194,7 @@ img {
   vertical-align: middle;
   width: 100%
 }
+
+.md-typeset .md-typeset__table {
+  display: block
+}
