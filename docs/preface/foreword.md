@@ -27,18 +27,18 @@ my Gentoo installation without breaking it. I created DOTSLASHLINUX a static
 website that was tailored for the needs of GNU/Linux enthusiasts who were fond
 of lightweight open-source software and the suckless philosophy. The site itself
 was extremely lightweight and fully responsive. It also had a working comments
-system to showcase that lightweight doesn't necessarily means inconvenient.
+system to showcase that lightweight doesn't necessarily mean inconvenient.
 
-I wrote guides on how to replace popular applications with lightweight (even
-suckless) alternatives that provided similar (if not identical) functionality.
-I provided configurations for dwm and was one of the first people to use
-slstatus in a dwm desktop.
+I wrote guides on how to replace popular applications with lightweight and even
+suckless alternatives that provided similar if not identical functionality. I
+provided configurations for dwm and was one of the first people to use slstatus
+in a dwm desktop.
 
 But that wasn't enough, so I added more guides on how to start Xorg using xinit,
 and how to boot the Linux kernel on Gentoo without an initrd/initramfs. I soon
 found myself posting a guide on how to build microcode updates directly into
 the kernel itself for a more minimalist system. Along the way, I contributed
-the first guide on how to correctly setup bumblebee on Gentoo.
+an in-depth guide on how to correctly setup bumblebee on Gentoo.
 
 Sadly (or luckily I guess), my obsession lead me to start experimenting with the
 Linux kernel configuration options and how much of them I could disable without
@@ -56,8 +56,9 @@ fully working and ran everything fine.
 
 I started documenting all the knowledge that I've gathered while configuring
 the kernel into a huge 18 part guide that explained what configuration option I
-enabled and the rationale behind it. It also discussed some of the disabled
-options that understanding what they did was crucial before disabling them.
+enabled and the rationale behind it. The guide also discussed some of the
+disabled options and why understanding what they did was crucial before
+disabling them.
 
 Unfortunately, the guide was left unmaintained at version 4.14.12 because I lost
 interest after I attempted to recompile my entire Gentoo installation with
@@ -69,23 +70,23 @@ sweet 45 MB RAM usage).
 ![lightweight2](../img/lightweight2.png)
 
 ## The Calm Before the Storm
-I tried Void, Crux, Fedora, OpenSUSE Tumbleweed, Dragora, Parabola and many more
-but I wasn't offered as much configuration as I wanted, and I didn't have the
-time, so I was stuck with Arch, which surprisingly served me well and is still
-my daily driver to this day.
+I tried Void, Crux, Fedora, OpenSUSE Tumbleweed, Dragora, Parabola, the BSDs and
+many more but I wasn't offered as much configuration as I wanted, and I didn't
+have the time, so I was stuck with Arch, which surprisingly served me well and
+is still my daily driver to this day.
 
-There was a comment on DOTSLASHLINUX that was posted on the last part (part 18)
-of the kernel configuration series. The comment was posted out of good deed and
-had the following sentence *"I wonder how far you can mush this minimalistic
-behaviour..."*. It shook me to the core because I didn't know how minimal I
-should go, especially after my Gentoo installation failed me (because of what I
-did), so I started planning how I could build the most minimal distribution
-ever that didn't sacrifice convenience.
+However, there was a comment on DOTSLASHLINUX that was posted on the last part
+of the kernel configuration series (part 18). The comment was posted out of good
+deed and had the following sentence *"I wonder how far you can mush this
+minimalistic behaviour..."*. It shook me to the core because I didn't know how
+minimal I should go, especially after my Gentoo installation failed me (because
+of what I did), so I started planning how I could build the most minimal
+distribution ever that didn't sacrifice convenience.
 
 At the time, I was barely 3 years into my Linux journey and I started developing
-my own distribution from scratch. At first, I had something against Linux From
-Scratch (LFS) because the distribution you'll end up with is similar to every
-other distribution, so I wasn't content.
+my own distribution from scratch. At first, I refrained from reading Linux From
+Scratch (LFS) because I wasn't content with the fact the resulting distribution
+is similar every other distribution.
 
 ## The Nightmare Phase Begins
 I started looking into all of the available options and choosing the lightest of
@@ -249,47 +250,51 @@ was using, and this took a lot of time, but I did it.
 glaucus in its current state is a bunch of shell scripts written in POSIX DASH,
 that build a musl libc and toybox based Linux® distribution from scratch.
 
-## glaucus vs Linux From Scratch (LFS)
-If you were to compare glaucus to the resulting system built with LFS, then the
-following table would summarize the comparison:
+## Linux From Scratch (LFS) vs glaucus
+If I were to compare the resulting system built with LFS to glaucus, then the
+following tables would summarize the differences:
 
 The cross toolchain:
 
-| Linux From Scratch (LFS) | glaucus  |
-| :----------------------: | :------: |
-| binutils                 | binutils |
-| gcc                      | gcc      |
+| Linux From Scratch (LFS) | glaucus             |
+| ------------------------ | ------------------- |
+| binutils                 | binutils            |
+| gcc                      | gcc                 |
 
 The native toolchain:
 
-| Linux From Scratch (LFS) | glaucus       |
-| :----------------------: | :-----------: |
-| linux-headers            | linux-headers |
-| glibc                    | musl          |
-| libstdc++-v3             | libstdc++-v3  |
-| binutils                 | binutils      |
-| gcc                      | gcc           |
+| Linux From Scratch (LFS) | glaucus             |
+| ------------------------ | ------------------- |
+| linux-headers            | linux-headers       |
+| glibc                    | musl                |
+| libstdc++-v3             | libstdc++-v3        |
+| binutils                 | binutils            |
+| gcc                      | gcc                 |
 
 The chroot (temporary) environmennt (glaucus's order is different, but it's
 displayed as is for ease of comparison with LFS's order):
 
 | Linux From Scratch (LFS) | glaucus             |
-| :----------------------: | :-----------------: |
+| ------------------------ | ------------------- |
 | tcl                      | -                   |
 | expect                   | -                   |
 | dejagnu                  | -                   |
 | m4                       | m4                  |
 | ncurses                  | netbsd-curses       |
-| bash                     | oksh, dash and bash |
+| -                        | oksh                |
+| -                        | dash                |
+| bash                     | bash                |
 | bison                    | bison               |
 | bzip2                    | lbzip2              |
 | coreutils                | toybox              |
+| -                        | rsync               |
 | diffutils                | diffutils           |
 | file                     | file                |
 | findutils                | findutils           |
 | gawk                     | mawk                |
 | gettext                  | gettext-tiny        |
 | grep                     | grep                |
+| -                        | zlib-ng             |
 | gzip                     | pigz                |
 | make                     | make                |
 | patch                    | patch               |
@@ -299,19 +304,105 @@ displayed as is for ease of comparison with LFS's order):
 | tar                      | libarchive          |
 | texinfo                  | texinfo             |
 | xz                       | xz                  |
-| -                        | zlib-ng             |
-| -                        | rsync               |
 
 The final system:
 
 | Linux From Scratch (LFS) | glaucus             |
-| :----------------------: | :-----------------: |
-| tcl                      | -                   |
-| expect                   | -                   |
-| dejagnu                  | -                   |
-| m4                       | m4                  |
-| ncurses                  | netbsd-curses       |
-| bash                     | oksh, dash and bash |
-| bison                    | bison               |
+| ------------------------ | ------------------- |
+| linux-headers            | linux-headers       |
+| man-pages                | -                   |
+| glibc                    | musl                |
+| zlib                     | zlib-ng             |
 | bzip2                    | lbzip2              |
+| xz                       | xz                  |
+| file                     | file                |
+| readline                 | libedit             |
+| m4                       | m4                  |
+| bc                       | bc                  |
+| binutils                 | binutils            |
+| gmp                      | gmp                 |
+| mpfr                     | mpfr                |
+| mpc                      | mpc                 |
+| -                        | isl                 |
+| attr                     | attr                |
+| acl                      | acl                 |
+| -                        | skalibs             |
+| -                        | utmps               |
+| shadow                   | shadow              |
+| gcc                      | gcc                 |
+| pkg-config               | pkgconf             |
+| ncurses                  | netbsd-curses       |
+| libcap                   | libcap              |
+| sed                      | sed                 |
+| psmisc                   | psmisc              |
+| iana-etc                 | -                   |
+| bison                    | bison               |
+| flex                     | flex                |
+| grep                     | grep                |
+| -                        | oksh                |
+| -                        | dash                |
+| bash                     | bash                |
+| -                        | slibtool            |
+| libtool                  | libtool             |
+| gdbm                     | gdbm                |
+| gperf                    | gperf               |
+| expat                    | expat               |
+| inetutils                | -                   |
+| perl                     | perl                |
+| perl-xml-parser          | perl-xml-parser     |
+| intltool                 | intltool            |
+| autoconf                 | autoconf            |
+| automake                 | automake            |
+| kmod                     | kmod                |
+| gettext                  | gettext-tiny        |
+| -                        | libuargp            |
+| -                        | musl-fts            |
+| -                        | musl-obstack        |
+| elfutils-libelf          | elfutils-libelf     |
+| libffi                   | libffi              |
+| openssl                  | openssl             |
+| python                   | python              |
+| ninja                    | samurai             |
+| meson                    | meson               |
 | coreutils                | toybox              |
+| check                    | -                   |
+| diffutils                | diffutils           |
+| gawk                     | mawk                |
+| findutils                | findutils           |
+| groff                    | -                   |
+| grub                     | grub                |
+| less                     | less                |
+| gzip                     | pigz                |
+| zstd                     | -                   |
+| iproute2                 | iproute2            |
+| kbd                      | kbd                 |
+| libpipeline              | -                   |
+| make                     | make                |
+| patch                    | patch               |
+| man-db                   | mandoc              |
+| tar                      | libarchive          |
+| texinfo                  | texinfo             |
+| vim                      | vim                 |
+| -                        | execline            |
+| -                        | s6                  |
+| procps-ng                | procps-ng           |
+| util-linux               | util-linux          |
+| e2fsprogs                | e2fsprogs           |
+| sysklogd                 | -                   |
+| sysvinit                 | s6-linux-init       |
+| -                        | s6-rc               |
+| eudev                    | eudev               |
+| -                        | s6-boot-scripts     |
+| linux                    | linux               |
+
+As you can see, in many of LFS's packages were replaced with alternatives that
+are either lighter or provided better performance.
+
+## The Aim of this Book
+This book aims to provide you with the knowledge necessary to build glaucus from
+scratch.
+
+## The Voyager (Author)
+Firas Khalil Khana
+
+firasuke@glaucuslinux.org
