@@ -1,15 +1,15 @@
-# Foreword
-## When the Journey Began
-The year is 2014, I had just started using a GNU/Linux distribution (Arch
-Linux to be precise). I was searching for what I naively thought at the time was
-the most advanced and most performant GNU/Linux distribution.
+# i. Foreword
+## i.1. When It All started
+The year is 2014, I had just started using a GNU/Linux distribution (Arch Linux
+to be precise). I was searching for what I naively thought at the time was the
+most advanced and most performant GNU/Linux distribution.
 
 My goal was to squeeze as much performance as I could from my trusty Satellite,
 and to some extent I was able to do that. I was surprized by how well a
 GNU/Linux distribution faired when compared to Windows when performing the
 simplest as well as the hardest of tasks.
 
-## Commence the Gentoo Phase
+## i.2. Commence the Gentoo Phase
 Throughout my journey, I was shocked by how little resources GNU/Linux
 distributions used in general. This shock soon turned into an obsession about
 how I could further trim my (GNU/)Linux system without sacrificing convenience.
@@ -21,7 +21,7 @@ without breaking it. I found myself disabling USE flags all over the place,
 removing those that I had no USE of (pun intended). I slowly ended up with a
 lightweight system that had everything I needed, but I still wasn't satisfied.
 
-## Begin the DOTSLASHLINUX Phase
+## i.3. Begin the DOTSLASHLINUX Phase
 Deep down the rabbit hole I went... I started figuring out how to further strip
 my Gentoo installation without breaking it. I created DOTSLASHLINUX a static
 website that was tailored for the needs of GNU/Linux enthusiasts who were fond
@@ -36,9 +36,9 @@ in a dwm desktop.
 
 But that wasn't enough, so I added more guides on how to start Xorg using xinit,
 and how to boot the Linux kernel on Gentoo without an initrd/initramfs. I soon
-found myself posting a guide on how to build microcode updates directly into
-the kernel itself for a more minimalist system. Along the way, I contributed
-an in-depth guide on how to correctly setup bumblebee on Gentoo.
+found myself posting a guide on how to build microcode updates directly into the
+kernel itself for a more minimalist system. Along the way, I contributed an
+in-depth guide on how to correctly setup bumblebee on Gentoo.
 
 Sadly (or luckily I guess), my obsession lead me to start experimenting with the
 Linux kernel configuration options and how much of them I could disable without
@@ -54,8 +54,8 @@ installation that ran under 30 MBs of RAM when Xorg wasn't running, and was just
 under 50 MBs when Xorg, dwm and slstatus were running. The system had bumblebee
 fully working and ran everything fine.
 
-I started documenting all the knowledge that I've gathered while configuring
-the kernel into a huge 18 part guide that explained what configuration option I
+I started documenting all the knowledge that I've gathered while configuring the
+kernel into a huge 18 part guide that explained what configuration option I
 enabled and the rationale behind it. The guide also discussed some of the
 disabled options and why understanding what they did was crucial before
 disabling them.
@@ -69,7 +69,7 @@ sweet 45 MB RAM usage).
 
 ![lightweight2](../img/lightweight2.png)
 
-## The Calm Before the Storm
+## i.4. The Calm Before the Storm
 I tried Void, Crux, Fedora, OpenSUSE Tumbleweed, Dragora, Parabola, the BSDs and
 many more but I wasn't offered as much configuration as I wanted, and I didn't
 have the time, so I was stuck with Arch, which surprisingly served me well and
@@ -88,7 +88,7 @@ my own distribution from scratch. At first, I refrained from reading Linux From
 Scratch (LFS) because I wasn't content with the fact the resulting distribution
 is similar every other distribution.
 
-## The Nightmare Phase Begins
+## i.5. The Nightmare Phase Begins
 I started looking into all of the available options and choosing the lightest of
 them all. I began experimenting with a TCC, musl and elftoolchain toolchain (no
 pun intended ;)), and decided to make suckless base (sbase) and LibreSSL my
@@ -99,8 +99,8 @@ you nightmares).
 ![nightmare](../img/nightmare.png)
 
 At the time, I picked snail to be the name of this abomination of a distribution
-that I was creating. So yes as expected TCC failed to build a complete sbase
-(it didn't compile all of sbase so some tools were missing), and I deemed this
+that I was creating. So yes as expected TCC failed to build a complete sbase (it
+didn't compile all of sbase so some tools were missing), and I deemed this
 toolchain (TCC, musl and elftoolchain) as a complete failure. So I called it
 quits and ended the whole thing... Just kidding, I love to torture myself
 apparently don't I xD
@@ -139,7 +139,7 @@ I might switch to lld in the distant future and maybe give GOLD another chance,
 but I won't be changing the design of the toolchain, especially after I got it
 working perfectly with the optimizations I'm using.
 
-## Introducing snail
+## i.6. Introducing snail
 Presented with so many options, I was delighted (and overwhelmed) that I opted
 for creating my own Linux distribution (yes Linux only as I wasn't planning on
 using enough GNU software to add the GNU to it). I went with suckless software,
@@ -169,7 +169,7 @@ me to do that, I needed to rewrite snail from scratch in POSIX DASH and give the
 project a new name, so I went with something even smaller (the irony) but much
 more venemous, glaucus.
 
-## Introducing glaucus
+## i.7. Introducing glaucus
 glaucus was born as an attempt to fix snail and turn it into a usable Linux
 distribution that's not only extremely lightweight, but also highly optimized
 for performance and much more convenient.
@@ -199,22 +199,22 @@ pages).
 
 ![glaucus3](../img/glaucus3.png)
 
-## Fixing glaucus
+## i.8. Fixing glaucus
 But unfortunately (or fortunately), it was at this point that I began to regret
 my poor design decisions that could be summarized in the following list:
 
 1.   I went with the latest upstream version for available software, and by
-latest I the developmental versions or git versions, which was easier to
-upgrade as submodules but was harder to maintain due to the constant changes.
-I had a cross GCC musl toolchain built with the latest developmental versions
-of GCC 10, gmp, mpfr, mpc, isl (the latest ISL with Graphite optimizations
-enabled) and zstd (since zstd support was added to GCC 10, this meant that this
-toolchain performed LTO optimizations using zstd as the default compression
-method and zlib as the fallback method).
+     latest I the developmental versions or git versions, which was easier to
+     upgrade as submodules but was harder to maintain due to the constant
+     changes.  I had a cross GCC musl toolchain built with the latest
+     developmental versions of GCC 10, gmp, mpfr, mpc, isl (the latest ISL with
+     Graphite optimizations enabled) and zstd (since zstd support was added to
+     GCC 10, this meant that this toolchain performed LTO optimizations using
+     zstd as the default compression method and zlib as the fallback method).
 
 2.   By making the toolchain a cross toolchain only I wasn't able to build a
-working graphics stack as the host tools and libraries were leaking into my
-binaries regardless of how much isolation I perform.
+     working graphics stack as the host tools and libraries were leaking into my
+     binaries regardless of how much isolation I perform.
 
 I knew I had to fix these problems before advancing glaucus's development, so I
 decided to give Linux From Scratch (LFS) a try even though it's using much
@@ -222,12 +222,12 @@ different tools than the ones I'm using.
 
 It was also around this time that I discovered Musl-LFS developed by dslm4515,
 and he was building Linux From Scratch using musl libc and s6 and S6-rc as the
-init and service management systems respectively. Musl-LFS had a working
-GCC and musl toolchain using many patches from Void Linux, but it really was a
-chore to build as you'd have to build some of its components several times to
-achieve maximum isolation. For example, GCC is built 5 times in Musl-LFS, two
-times for the cross toolchain, and two times for the native toolchain and one
-time when installed as a system package.
+init and service management systems respectively. Musl-LFS had a working GCC and
+musl toolchain using many patches from Void Linux, but it really was a chore to
+build as you'd have to build some of its components several times to achieve
+maximum isolation. For example, GCC is built 5 times in Musl-LFS, two times for
+the cross toolchain, and two times for the native toolchain and one time when
+installed as a system package.
 
 This isn't ideal and can be shortened down by carefully inspecting what LFS does
 with its toolchain. You need to build a cross binutils then build a stripped
@@ -246,11 +246,11 @@ the native toolchain, and one for the final system ceras (package).
 I also had to migrate to the latest available stable versions of the software I
 was using, and this took a lot of time, but I did it.
 
-## What is glaucus now?
+## i.9. What Is glaucus Now?
 glaucus in its current state is a bunch of shell scripts written in POSIX DASH,
 that build a musl libc and toybox based Linux® distribution from scratch.
 
-## Linux From Scratch (LFS) vs glaucus
+## i.10. Linux From Scratch (LFS) vs glaucus
 If I were to compare the resulting system built with LFS to glaucus, then the
 following tables would summarize the differences:
 
@@ -398,11 +398,11 @@ The final system:
 As you can see, in many of LFS's packages were replaced with alternatives that
 are either lighter or provided better performance.
 
-## The Aim of this Book
+## i.11. The Aim of This Book
 This book aims to provide you with the knowledge necessary to build glaucus from
 scratch.
 
-## The Voyager (Author)
+## i.12. The Voyager (Author)
 Firas Khalil Khana
 
 firasuke@glaucuslinux.org

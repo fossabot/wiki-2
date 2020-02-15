@@ -16,56 +16,58 @@ nav:
       - 1.1. How to Build glaucus: introduction/introduction/how-to-build-glaucus.md
       - 1.2. Resources: introduction/introduction/resources.md
       - 1.3. Help: introduction/introduction/help.md
-  - II. Preparing for the Build:
+  - II. Constructing the Toolchain and the Chroot Environment:
     - 2. Preparing the Host System:
-      - 2.1. Introduction: preparing-for-the-build/preparing-the-host-system/introduction.md
-      - 2.2. Host System Requirements: preparing-for-the-build/preparing-the-host-system/host-system-requirements.md
-      - 2.3. Building glaucus in Stages: preparing-for-the-build/preparing-the-host-system/building-glaucus-in-stages.md
+      - 2.1. Introduction: constructing-the-toolchain-and-the-chroot-environment/preparing-the-host-system/introduction.md
+      - 2.2. Host System Requirements: constructing-the-toolchain-and-the-chroot-environment/preparing-the-host-system/host-system-requirements.md
+      - 2.3. Building glaucus in Stages: constructing-the-toolchain-and-the-chroot-environment/preparing-the-host-system/building-glaucus-in-stages.md
     - 3. Cerata and Patches:
-      - 3.1. Introduction: preparing-for-the-build/cerata-and-patches/introduction.md
-      - 3.2. All Cerata: preparing-for-the-build/cerata-and-patches/all-cerata.md
-      - 3.3. Needed Patches: preparing-for-the-build/cerata-and-patches/needed-patches.md
+      - 3.1. Introduction: constructing-the-toolchain-and-the-chroot-environment/cerata-and-patches/introduction.md
+      - 3.2. All Cerata: constructing-the-toolchain-and-the-chroot-environment/cerata-and-patches/all-cerata.md
+      - 3.3. Needed Patches: constructing-the-toolchain-and-the-chroot-environment/cerata-and-patches/needed-patches.md
     - 4. Final Preparations:
-      - 4.1. Introduction: preparing-for-the-build/final-preparations/introduction.md
-      - 4.2. Creating the $GLAT Directory: preparing-for-the-build/final-preparations/creating-the-glat-directory.md
-      - 4.3. Adding the glaucus User: preparing-for-the-build/final-preparations/adding-the-glaucus-user.md
-      - 4.4. Setting Up the Environment: preparing-for-the-build/final-preparations/setting-up-the-environment.md
-      - 4.5. About SBUs: preparing-for-the-build/final-preparations/about-sbus.md
-      - 4.6. About the Test Suites: preparing-for-the-build/final-preparations/about-the-test-suites.md
-    - 5. Constructing a Temporary System:
-      - 5.1. Introduction: preparing-for-the-build/constructing-a-temporary-system/introduction.md
-      - 5.2. Toolchain Technical Notes: preparing-for-the-build/constructing-a-temporary-system/toolchain-technical-notes.md
-      - 5.3. General Compilation Instructions: preparing-for-the-build/constructing-a-temporary-system/general-compilation-instructions.md
-      - 5.5. Stripping: preparing-for-the-build/constructing-a-temporary-system/stripping.md
-      - 5.6. Changing Ownership: preparing-for-the-build/constructing-a-temporary-system/changing-ownership.md
-  - III. Building glaucus:
-    - 6. Installing Basic System Cerata:
-      - 6.1. Introduction: building-glaucus/installing-basic-system-cerata/introduction.md
-      - 6.2. Preparing Virtual Kernel File Systems: building-glaucus/installing-basic-system-cerata/preparing-virtual-kernel-file-systems.md
-      - 6.3. Package Management: building-glaucus/installing-basic-system-cerata/package-management.md
-      - 6.4. Entering the Chroot Environment: building-glaucus/installing-basic-system-cerata/entering-the-chroot-environment.md
-      - 6.5. Creating Directories: building-glaucus/installing-basic-system-cerata/creating-directories.md
-      - 6.6. Creating Essential Files and Symlinks: building-glaucus/installing-basic-system-cerata/creating-essential-files-and-symlinks.md
-      - 6.8. Adjusting the Toolchain: building-glaucus/installing-basic-system-cerata/adjusting-the-toolchain.md
-      - 6.10. About Debugging Symbols: building-glaucus/installing-basic-system-cerata/about-debugging-symbols.md
-      - 6.11. Stripping Again: building-glaucus/installing-basic-system-cerata/stripping-again.md
-      - 6.12. Cleaning Up: building-glaucus/installing-basic-system-cerata/cleaning-up.md
-    - 7. System Configuration:
-      - 7.1. Introduction: building-glaucus/system-configuration/introduction.md
-      - 7.2. Overview of Device and Module Handling: building-glaucus/system-configuration/overview-of-device-and-module-handling.md
-      - 7.3. Managing Devices: building-glaucus/system-configuration/managing-devices.md
-      - 7.4. General Network Configuration: building-glaucus/system-configuration/general-network-configuration.md
-      - 7.5. s6 Boot Scripts Usage and Configuration: building-glaucus/system-configuration/s6-boot-scripts-usage-and-configuration.md
-      - 7.6. OKSH Startup Files: building-glaucus/system-configuration/oksh-startup-files.md
-      - 7.8. Creating the /etc/shells File: building-glaucus/system-configuration/creating-the-etc-shells-file.md
-    - 8. Making glaucus Bootable:
-      - 8.1. Introduction: building-glaucus/making-glaucus-bootable/introduction.md
-      - 8.2. Creating the /etc/fstab File: building-glaucus/making-glaucus-bootable/creating-the-etc-fstab-file.md
-    - 9. The End:
-      - 9.1. The End: building-glaucus/the-end/the-end.md
-      - 9.2. Get Counted: building-glaucus/the-end/get-counted.md
-      - 9.3. Rebooting the System: building-glaucus/the-end/rebooting-the-system.md
-      - 9.4. What Now?: building-glaucus/the-end/what-now.md
+      - 4.1. Introduction: constructing-the-toolchain-and-the-chroot-environment/final-preparations/introduction.md
+      - 4.2. Creating the $GLAT Directory: constructing-the-toolchain-and-the-chroot-environment/final-preparations/creating-the-glat-directory.md
+      - 4.3. Adding the glaucus User: constructing-the-toolchain-and-the-chroot-environment/final-preparations/adding-the-glaucus-user.md
+      - 4.4. Setting Up the Environment: constructing-the-toolchain-and-the-chroot-environment/final-preparations/setting-up-the-environment.md
+      - 4.5. About SBUs: constructing-the-toolchain-and-the-chroot-environment/final-preparations/about-sbus.md
+      - 4.6. About the Test Suites: constructing-the-toolchain-and-the-chroot-environment/final-preparations/about-the-test-suites.md
+    - 5. Constructing the Toolchain:
+      - 5.1. Introduction: constructing-the-toolchain-and-the-chroot-environment/constructing-the-toolchain/introduction.md
+      - 5.2. Toolchain Technical Notes: constructing-the-toolchain-and-the-chroot-environment/constructing-the-toolchain/toolchain-technical-notes.md
+      - 5.3. General Compilation Instructions: constructing-the-toolchain-and-the-chroot-environment/constructing-the-toolchain/general-compilation-instructions.md
+    - 6. Constructing the Chroot Environment:
+      - 6.1. Introduction: constructing-the-toolchain-and-the-chroot-environment/constructing-the-chroot-environment/stripping.md
+      - 6.2. Stripping: constructing-the-toolchain-and-the-chroot-environment/constructing-the-chroot-environment/stripping.md
+      - 6.3. Changing Ownership: constructing-the-toolchain-and-the-chroot-environment/constructing-the-chroot-environment/changing-ownership.md
+  - III. Constructing and Envenomating glaucus:
+    - 7. Installing Basic System Cerata:
+      - 7.1. Introduction: constructing-and-envenomating-glaucus/installing-basic-system-cerata/introduction.md
+      - 7.2. Preparing Virtual Kernel File Systems: constructing-and-envenomating-glaucus/installing-basic-system-cerata/preparing-virtual-kernel-file-systems.md
+      - 7.3. Package Management: constructing-and-envenomating-glaucus/installing-basic-system-cerata/package-management.md
+      - 7.4. Entering the Chroot Environment: constructing-and-envenomating-glaucus/installing-basic-system-cerata/entering-the-chroot-environment.md
+      - 7.5. Creating Directories: constructing-and-envenomating-glaucus/installing-basic-system-cerata/creating-directories.md
+      - 7.6. Creating Essential Files and Symlinks: constructing-and-envenomating-glaucus/installing-basic-system-cerata/creating-essential-files-and-symlinks.md
+      - 7.8. Adjusting the Toolchain: constructing-and-envenomating-glaucus/installing-basic-system-cerata/adjusting-the-toolchain.md
+      - 7.10. About Debugging Symbols: constructing-and-envenomating-glaucus/installing-basic-system-cerata/about-debugging-symbols.md
+      - 7.11. Stripping Again: constructing-and-envenomating-glaucus/installing-basic-system-cerata/stripping-again.md
+      - 7.12. Cleaning Up: constructing-and-envenomating-glaucus/installing-basic-system-cerata/cleaning-up.md
+    - 8. System Configuration:
+      - 8.1. Introduction: constructing-and-envenomating-glaucus/system-configuration/introduction.md
+      - 8.2. Overview of Device and Module Handling: constructing-and-envenomating-glaucus/system-configuration/overview-of-device-and-module-handling.md
+      - 8.3. Managing Devices: constructing-and-envenomating-glaucus/system-configuration/managing-devices.md
+      - 8.4. General Network Configuration: constructing-and-envenomating-glaucus/system-configuration/general-network-configuration.md
+      - 8.5. s6 Boot Scripts Usage and Configuration: constructing-and-envenomating-glaucus/system-configuration/s6-boot-scripts-usage-and-configuration.md
+      - 8.6. OKSH Startup Files: constructing-and-envenomating-glaucus/system-configuration/oksh-startup-files.md
+      - 8.8. Creating the /etc/shells File: constructing-and-envenomating-glaucus/system-configuration/creating-the-etc-shells-file.md
+    - 9. Making glaucus Bootable:
+      - 9.1. Introduction: constructing-and-envenomating-glaucus/making-glaucus-bootable/introduction.md
+      - 9.2. Creating the /etc/fstab File: constructing-and-envenomating-glaucus/making-glaucus-bootable/creating-the-etc-fstab-file.md
+    - 10. The End:
+      - 10.1. The End: constructing-and-envenomating-glaucus/the-end/the-end.md
+      - 10.2. Get Counted: constructing-and-envenomating-glaucus/the-end/get-counted.md
+      - 10.3. Rebooting the System: constructing-and-envenomating-glaucus/the-end/rebooting-the-system.md
+      - 10.4. What Now?: constructing-and-envenomating-glaucus/the-end/what-now.md
   - IV. Appendices:
     - A. Acronyms and Terms: appendices/acronyms-and-terms.md
     - B. Acknowledgements: appendices/acknowledgements.md
@@ -95,6 +97,9 @@ repo_name: glaucuslinux/glaucus
 edit_uri: ''
 extra_css:
   - 'css/extra.css'
+markdown_extensions:
+  - admonition
+  - codehilite
 strict: true
 remote_branch: 'master'
 plugins:
