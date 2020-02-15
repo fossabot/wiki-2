@@ -4,19 +4,19 @@ Arch Linux, Gentoo Linux, Void Linux, Fedora, or openSUSE). This existing Linux
 system (the host) will be used as a starting point to provide necessary
 programs, including a compiler, linker, and a shell, to build glaucus.
 
-## Chapter Two - Preparing the Host System
+## 1.1.1. Chapter Two - Preparing the Host System
 This chapter of the book describes how to prepare the host system for building
 glaucus and what packages are required in order to do that.
 
-## Chapter Three - Cerata and Patches
+## 1.1.2. Chapter Three - Cerata and Patches
 This chapter explains which cerata (packages) and patches that need to be
 fetched in order to build glaucus and how they're stored and handled.
 
-## Chapter Four - Final Preparations
+## 1.1.3. Chapter Four - Final Preparations
 Please read this chapter carefully as it explains several important issues you
 need to be aware of before working your way through the rest of the chapters.
 
-## Chapter Five - Constructing the Toolchain
+## 1.1.4. Chapter Five - Constructing the Toolchain
 Explains how the cross and native toolchains, which are necessary to build
 both the chroot environment and the final system glaucus, are constructed.
 
@@ -39,7 +39,7 @@ library which is `musl` and has nothing to do with the host's main C library
 which is assumed to be `glibc`; thus achieving maximum isolation from the host
 system.
 
-## Chapter Six - Constructing the Chroot Environment
+## 1.1.5. Chapter Six - Constructing the Chroot Environment
 Explains how the chroot environment is constructed using the native toolchain.
 All cerata (packages) built in the chroot environment are dynamically linked to
 the chroot's main C library which is `musl`.
@@ -51,7 +51,7 @@ This effort to isolate the new system from the host distribution may seem
 excessive. A full technical explanation as to why this is done is provided in
 Chapter 5, Section 2, titled “Toolchain Technical Notes”.
 
-## Chapter Seven - Installing Basic System Cerata
+## 1.1.6. Chapter Seven - Installing Basic System Cerata
 In this chapter the final system glaucus is built. The `chroot` program, which
 stands for change root, is used to enter a virtual environment and start a new
 `oksh` instance whose root directory will be set to the home directory of the
@@ -66,11 +66,11 @@ The major advantage is that *chrooting* allows you to continue using the host
 system while the final system glaucus is being built. While waiting for cerata
 compilations to complete, you can continue using your computer as normal.
 
-## Chapter Eight - System Configuration
+## 1.1.7. Chapter Eight - System Configuration
 The basic system configuration is set up in this chapter.
 
-## Chapter Nine - Making glaucus Bootable
+## 1.1.8. Chapter Nine - Making glaucus Bootable
 The kernel and boot loader are set up in this chapter.
 
-## Chapter 10 - The End
+## 1.1.9. Chapter 10 - The End
 Contains information on what to do after finishing the installation of glaucus.
