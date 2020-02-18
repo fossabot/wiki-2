@@ -5,7 +5,7 @@ also make small modifications to make the cerata easier to work with.
 
 !!! warning
     The following patches are required to construct and envenomate the final
-    system glaucus.
+    system glaucus. They are automatically fetched and applied.
 
 !!! note
     These patches are neither applied to the toolchain nor to the chroot
