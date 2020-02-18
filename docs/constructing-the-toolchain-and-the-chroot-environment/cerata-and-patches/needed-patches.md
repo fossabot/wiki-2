@@ -1495,24 +1495,24 @@ Source: clear
 
 Size: 784B
 
-SHA-512 Sum: 777cde4f958f6a20b5e696318af52888c8eaf57a6ed0b758fc1772fd39d2401e7
-2123d5dba9aa9449c18b23b05e767ecaaf1ca65afd396ad4925508a1501f3c0
+SHA-512 Sum: 09bdc432ba59737d3a72cda9819fba14cf5ed3349ac54640bfca43cd39dbcfa3e
+7a979d034462bad3c6900fb4a4a2571ecc29e1f30b391fc781bd704c27aff41
 
 ### 3.3.15.1. 0105-ksm-wakeups.patch
 Source: clear
 
 Size: 1.8K
 
-SHA-512 Sum: a89d0ccc28b197b40c04122f91c4ec80e8ea603ea96c489cb8cba8b014bebb6c2
-56d0b201d10d2e97ec60515c661ba401b17932827fb53cc67c071d01a828bca
+SHA-512 Sum: 5edf1a114119308b413c8b988fc55d5389f75a215f77817728c4ad8d175eb4b0c
+6b61cf211d56361fda556aec17827f1bb63baecec6052bff42ef8615d48eb60
 
 ### 3.3.15.1. 0106-intel_idle-tweak-cpuidle-cstates.patch
 Source: clear
 
 Size: 7.0K
 
-SHA-512 Sum: 8559c48d0e5489c9a9258998cdcb81f143853d491c3bfb3bc0a3a086fe203fde3
-cce800193c19c9c9c9334c061fc7f8687b5b80639d2c101f0a025137bc44609
+SHA-512 Sum: 4a8dc949765b382d20bde32e2a7beba7eba475b09f8fccb2a2d1adb5f1ec66a94
+947d619b5764109e559c53451968f94a8337d6c2fb5759e02cdafd4fb9f7dbf
 
 ### 3.3.15.1. 0108-smpboot-reuse-timer-calibration.patch
 Source: clear
@@ -1535,16 +1535,16 @@ Source: clear
 
 Size: 985B
 
-SHA-512 Sum: 124ce560c0f17bbee74def51f689d77c84a8c67db8299079ee4c44fa963fd5c67
-ae68b8a92bbdee93bf503aa66f21faecc0c66c2b95940f0f2e7bfcbf4de043e
+SHA-512 Sum: 712aced83eced04bf7e0296121fa072e780a17a4df690263474cecbef6c766a41
+b21cf1be561cc7c2fc30aa46f83c59f08e3525464647a449904ee022572e464
 
 ### 3.3.15.1. 0112-ipv4-tcp-allow-the-memory-tuning-for-tcp-to-go-a-lit.patch
 Source: clear
 
 Size: 942B
 
-SHA-512 Sum: d2ad4f30d82a9bbedc031f83050f4c10b2c3c6dcb83e88ba329955dd6083c4035
-eafd03c74aa591a220745f0836f00942683abed4e07d1a1dc2eed5335a830ab
+SHA-512 Sum: 59183a81acf7d121abd960fd0fca153c7e1e350c2dd83bfcd717771b23e71d75b
+975e687a68e7efeffe9efe55fc7fa23f9f59eb135d4f2ac9797b33df6a84cc2
 
 ### 3.3.15.1. 0113-kernel-time-reduce-ntp-wakeups.patch
 Source: clear
@@ -1559,153 +1559,144 @@ Source: clear
 
 Size: 838B
 
-SHA-512 Sum: 928b64367396e37b773624c31f50fba0fe32dfe2e01c6cc0e87f0a733e38bf609
-b429139806b65b73691dc097cee9389310e69ab9bd8ee1287dcb0d636b15e41
+SHA-512 Sum: 15475f00ed045693a2ab89add449c1ad77b66253ff827eb8bab8d1969502403b5
+bc9a8ee39a585a144d2dfc23ead4fadf65c3137310c5f8143812baa9e79d906
 
 ### 3.3.15.1. 0122-do-accept-in-LIFO-order-for-cache-efficiency.patch
 Source: clear
 
 Size: 3.7K
 
-SHA-512 Sum: d9844d83c369b07638227739d56b1cec5d55724f5e943316a41a2829312d14bf7
-6ffb5c41dd983d5b8c9bdd34094f2224dd3f056e1c861d7ae7d3ec70166374a
+SHA-512 Sum: af2b92ecba32a884733bdf1e137bfa8abf187b880e4cf3501d009afa9282a2b1e
+740a6004d154cbc5956efc4fd37e3cb69a411f9aa40131bdb115846bb72fd58
 
 ### 3.3.15.1. 0124-locking-rwsem-spin-faster.patch
 Source: clear
 
 Size: 992B
 
-SHA-512 Sum: 53d8cb351c48f341171bd55bc9dadc5a49730fd2f8b755040b6ae1653e5917bf1
-54852f05d793f4eb27f2423ab2db91625d14b4e743f65f148c38593182d89c1
+SHA-512 Sum: 5bf9076ee95e78dc51d2121948babc66a7fa99c8a4cd5cc2f8102fb1dd225fa5f
+1f35d12f1cfa6ab7db9d9e951572eabdd6ae228fd3731c028c46d211d25c65f
 
 ### 3.3.15.1. 0125-ata-libahci-ignore-staggered-spin-up.patch
 Source: clear
 
 Size: 1.4K
 
-SHA-512 Sum: e7153035e400d60d95cc683869e1fb770ed5dc942b8e8f94431607f1bcf12ae1e
-e277c9d705b5650eeaa1b9ee9794b4a9cfd240ed0c6058564c54ea40a137ead
+SHA-512 Sum: 67acdcafd2b91eed06a532e456b2d9340a02580dfd559c9b4f5708b2e9e4dda32
+7ce7fdd66018523d5c7f29e41d7899261480b7ec2e26669e6c9519528aed9d0
 
-### 3.3.15.1. 0131-nvme-workaround.patch
+### 3.3.15.1. 0130-nvme-workaround.patch
 Source: clear
 
 Size: 947B
 
-SHA-512 Sum: 632ecd8ae7cb03e2771be012a9dcdebf7a07cabbe74888497a0c3b58b3cef9ed7
-b64220499ee1c998411d57245378db64d3d7bad9260bc2108bbc29c562507ae
+SHA-512 Sum: de28edb4b6f5e63650a1412804df93bc8574624392fd6eefa68dac606591d20ed
+64a2439c768ee5d91762dec24bb95c46e46dca37c4a63cb597559a26758e3b5
 
-### 3.3.15.2. uksm-5.4.patch
+### 3.3.15.2. uksm-5.5.patch
 Source: dolohow
 
 Size: 175K
 
-SHA-512 Sum: c9aa593db5c142cbc60c60fb15dc780c11af03a6607301250c27d5042b14481f1
-ea7edfc87bde70019d2bcd1f1d53c05c3291f94b9e66795c81fade740419818
+SHA-512 Sum: e0378fc34f01163e0f08c7bfffb1e7771ce0e57f1614ae0a28467a714b88ce33d
+559f9e45eb330f71d6071c15684379cd308146213b41e5580ff596501666776
 
 ### 3.3.15.3. 0001-libarchive-bsdtar-compatibility.patch
 Source: glaucus
 
 Size: 801B
 
-SHA-512 Sum: 9f9d190696b79ec0334266256b54b6a13d9def8c792797ecd78f8fcb9f8ab12f0
-2b520c4068dc8a27d1e7fb078e0bdb741c96ec5a527995b65fe366fd8d06cc4
+SHA-512 Sum: 170430eac7a32f2b19170c585d3b732af7511a7523d89d6801b06ceb11c61f2e8
+d7b17051d17c2566c4517cdaf34df21ac6ea63aa146b405aabecf65aad2ce5a
 
-### 3.3.15.4. enable_additional_cpu_optimizations_for_gcc_v9.1+_kernel_v4.13+.
-patch
+### 3.3.15.4. enable_additional_cpu_optimizations_for_gcc_v9.1+_kernel_v5.5+.patch
 Source: graysky2
 
 Size: 25K
 
-SHA-512 Sum: 2eb574fbfac6e334d3b06e52e466dbf8e88034515729b6571990b10f75a0fe2a5
-2f188615405c5a695b5820669e595deead44d7961a97c5872359be3435fdf63
+SHA-512 Sum: 52b14ef834769d2b4567e756a4485995acd2e3f5b989cbb53f9b113b42ff67b73
+6bbcb284b95fe15c9efb846fd12320a26a131e4ce9af50b521114d274b472f1
+
+### 3.3.15.5. 0001-compat-provide-compat_ptr-on-all-architectures.patch
+Source: sirlucjan
+
+Size: 7.8K
+
+SHA-512 Sum: 1daedf0ecea0e75f6ee075e860cf6b5822e5d1c76759e3cec1a3a1c61e183b333
+def223c4eb303b5e5c7f8841e89690a67c86b87e6d331144aebc32b81c3eb9a
 
 ### 3.3.15.5. 0001-consolemap-Fix-a-memory-leaking-bug-in-drivers-tty-v.patch
 Source: sirlucjan
 
 Size: 1.2K
 
-SHA-512 Sum: 05c9065e6082af32df759787872a33b2ddd447473a860f584dbc206fa340b48af
-d9b542cf151170f52f23001a33fe9efbb7f3adbe85602ef74a2b1ce79f60f39
-
-### 3.3.15.5. 0001-cpu-5.4-make-O3-always-available.patch
-Source: sirlucjan
-
-Size: 790B
-
-SHA-512 Sum: 2c353300472e062bbf34191991a75269aabd779f6dde1bc51bd79c1ee132d973b
-55255a5ae5935c4203c9c1c289db18c8376b81d7df49f7d599c9b796d712fc3
-
-### 3.3.15.5. 0001-futex-Split-key-setup-from-key-queue-locking-and-rea.patch
-Source: sirlucjan
-
-Size: 2.8K
-
-SHA-512 Sum: d06076d54d7af94fd67aa47f1979a63ad9383e0b1b02cc448e50b44ef09c63cc5
-c571358d8c226dc7e76a5b1ba5c1eb892ef9b6621139f4b99009696d9c1a070
-
-### 3.3.15.5. 0001-kbuild-reuse-intermediate-linker-scripts-in-the-fina.patch
-Source: sirlucjan
-
-Size: 3.8K
-
-SHA-512 Sum: fee1b36e9d8dd609e5f463dfc7c1bbf51aa0cf80ad90c1f4c4c2203d60b67168a
-c7f98522da1a644b790dbbb849fbac604e311a316785dd9cc34a5ad61baf622
+SHA-512 Sum: 21f2737288db0d6975b1b20d60bc3dedbc91f5dae22b7e758577324e463524178
+b7beb03bbf237957cd8f4c505aa4e0db14a5bb94ac7d6a5558c92caa9607da4
 
 ### 3.3.15.5. 0001-net-sched-allow-configuring-cake-qdisc-as-default.patch
 Source: sirlucjan
 
-Size: 964B
+Size: 968B
 
-SHA-512 Sum: 1b34b8a0a27d86d58c16d4c8ca291dbb9da0a3bda75e4fffe800692218509e461
-55f92158809d8dbc5dbde02cd062ba33d6e3922ca41f7153d9caf5e58d41d1f
+SHA-512 Sum: 6fd1b77efac22c108cf02ca3937704582658a8e2078b0d8bfd0baf128f6d94a06
+98d315c4fbd9065148afb89399ad0fd7d11ce10bd9782c8c6b09c8a89dab473
 
 ### 3.3.15.5. 0002-futex-Implement-mechanism-to-wait-on-any-of-several-.patch
 Source: sirlucjan
 
-Size: 10K
+Size: 16K
 
-SHA-512 Sum: 403643fd0623d81de39bfdf184628b67826bc6bbf2231d4e28592d369e4f73541
-788afc99854d44097da12595377bc6cbd498f8a179d6f7f331543cbfc271548
+SHA-512 Sum: 32603d6e6bc7b9627b8a18b1e3807f3a105aaa3af8e984df20a23e3157829c566
+a5401fd331be0a7137195bdfaa80b3951903f6d99dfc9c5665489c03e17f52b
 
-### 3.3.15.5. 0002-media-rc-prevent-memory-leak-in-cx23888_ir_probe.patch
+### 3.3.15.5. 0002-init-Kconfig-enable-O3-for-all-arches.patch
 Source: sirlucjan
 
-Size: 1.1K
+Size: 1.0K
 
-SHA-512 Sum: 4e78b67725ebbec0a652002e4607e51b0dcc1a15015ba0c2c7d69f6e22549c232
-d21dd9939a5a57b7cf84c5e70cb9a843ed67f5d7bc9072eb1846c7c3cc084cb
+SHA-512 Sum: c4e97986dc3eba213b13bca21c2a4045fba877213f5fb72a500d0edba24c81320
+33c0ddfea44d1efab7b98557ed6f95ce1afc081b5a9babd7315e6a401170263
 
 ### 3.3.15.5. 0003-block-set-rq_affinity-2-for-full-multithreading-I-O-.patch
 Source: sirlucjan
 
-Size: 994B
+Size: 998B
 
-SHA-512 Sum: e0045fb1aa25dd8a1f911f1c1f7fc116c48d9901826de5652a61bf98578ce5e29
-430a11bfa7d606605268666ce75f1340d4f97a0507d74e7956ae59f034b6c67
-
-### 3.3.15.5. 0003-futex-Change-WAIT_MULTIPLE-opcode-to-31.patch
-Source: sirlucjan
-
-Size: 820B
-
-SHA-512 Sum: 87b5a523e5639f32292d641d71bdb2a54b08844ebcf74c44fae876d9b505a2582
-be95268cb29d4b03307e1e4d969f804994ca222bda2ec8a5958160e369f2437
+SHA-512 Sum: f3831199023b34cd32b4fc83824e024dbb6aae8f1bee88fb490f2f167820eee46
+007eaf0200a85002a3442e554fbda2c553f0e8c6bc2ab46df211b71b14ed01b
 
 ### 3.3.15.5. 0003-sched-core-nr_migrate-256-increases-number-of-tasks-.patch
 Source: sirlucjan
 
-Size: 1.1K
+Size: 1.2K
 
-SHA-512 Sum: 04de043bc65611a7b93814478a4973ec195e077680a05aa79d47b73c303237388
-42a2ca6f1a48a60de7062bcbcc6338336fdf9d3423b4f25de2e6c0fd0f570f8
+SHA-512 Sum: 86647099fffe7d7bea6cc7e6f007e05514ad6c8d9724fac08376985945b03ab1e
+f74c121c17d15d1bdbb1990b0164418c2b415e57a6342ff9d2c4519b40b3183
 
 ### 3.3.15.5. 0004-mm-set-2048-for-address_space-level-file-read-ahead-.patch
 Source: sirlucjan
 
-Size: 914B
+Size: 918B
 
-SHA-512 Sum: 44b58df219ae94d683dc59e9dbf9c09c91c6ce88a818bd0089b5343b061bd06ea
-b8a204eab8d648ba2c8e9bfb6d13ca52c59bdc1540e9194ec4d99666f1f3ad9
+SHA-512 Sum: 92293760a99320dda40dc44309d7b4cdb0c2bde39d0786ed044ba2b608d32d841
+38c20f01298c6c442083ba0f6d867534966801bab5a89ac25026a899618a4d4
+
+### 3.3.15.5. 0005-kbuild-reuse-intermediate-linker-scripts-in-the-fina.patch
+Source: sirlucjan
+
+Size: 3.9K
+
+SHA-512 Sum: a31e73898ab125634386c8f4500de21c14459fa14ac0f1c2e341a93017c943e8b
+6f2721a505ca7c4e5671bbea8de93705c24003cb830c2600b57ab89ec6755bf
+
+### 3.3.15.5. 0006-futex-Add-Proton-compatibility-code.patch
+Source: sirlucjan
+
+Size: 1.6K
+
+SHA-512 Sum: 7ba968c03d8f39f74737b2d60b3942deeeaf51c5b6c1e32b5bd427430e3a8f40b
+40ac0201fdce0fafaf01f05c66ec07922590d70adae5583917431bdd2108543
 
 ## 3.3.16. lz4
 ### 3.3.16.1. 0001-Makefile-propagate-CFLAGS.patch
