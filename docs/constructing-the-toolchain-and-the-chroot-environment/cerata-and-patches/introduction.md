@@ -10,3 +10,8 @@ to work, and this book is based on their use.
     We highly recommend against using newer versions because the build commands
     for one version may not work with a newer version. The newest package
     versions may also have problems that require work-arounds.
+
+The `fetch` script (which is run automatically) will download all needed cerata
+and the `check` script (which is also automatically run) will verify all
+downloaded cerata, which will then be extracted (or cloned) to a subdirectory in
+the sources directory.
