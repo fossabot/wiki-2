@@ -11,10 +11,3 @@ be created as well.
     for toolchain and chroot cerata, and "CEU" (Ceras Envenomate Unit) for final
     system cerata. Both units will be provided in the future (they will probably
     be implemeted to be automatically measured).
-
-!!! note
-    When constructing the toolchain, `binutils` is given an CCU equivalent to 1,
-    and the rest of the toolchain and chroot cerata are measured according to
-    this CCU. Likewise, for the system cerata, the system `binutils` is given an
-    CEU equivalent to 1, and the rest of the system cerata are measure according
-    to this CEU.

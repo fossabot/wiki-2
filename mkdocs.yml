@@ -27,11 +27,12 @@ nav:
       - 3.3. Needed Patches: constructing-the-toolchain-and-the-chroot-environment/cerata-and-patches/needed-patches.md
     - 4. Final Preparations:
       - 4.1. Introduction: constructing-the-toolchain-and-the-chroot-environment/final-preparations/introduction.md
-      - 4.2. Creating the $GLAT Directory: constructing-the-toolchain-and-the-chroot-environment/final-preparations/creating-the-glat-directory.md
-      - 4.3. Adding the glaucus User: constructing-the-toolchain-and-the-chroot-environment/final-preparations/adding-the-glaucus-user.md
-      - 4.4. Setting Up the Environment: constructing-the-toolchain-and-the-chroot-environment/final-preparations/setting-up-the-environment.md
-      - 4.5. About SBUs: constructing-the-toolchain-and-the-chroot-environment/final-preparations/about-sbus.md
-      - 4.6. About the Test Suites: constructing-the-toolchain-and-the-chroot-environment/final-preparations/about-the-test-suites.md
+      - 4.2. Adding the glaucus User and Group: constructing-the-toolchain-and-the-chroot-environment/final-preparations/adding-the-glaucus-user-and-group.md
+      - 4.3. Cloning the glaucus Repository: constructing-the-toolchain-and-the-chroot-environment/final-preparations/cloning-the-glaucus-repository.md
+      - 4.4. Initializing the glaucus Repository: constructing-the-toolchain-and-the-chroot-environment/final-preparations/initializing-the-glaucus-repository.md
+      - 4.5. Setting Up the Environment: constructing-the-toolchain-and-the-chroot-environment/final-preparations/setting-up-the-environment.md
+      - 4.6. About CCUs and CEUs: constructing-the-toolchain-and-the-chroot-environment/final-preparations/about-ccus-and-ceus.md
+      - 4.7. About the Test Suites: constructing-the-toolchain-and-the-chroot-environment/final-preparations/about-the-test-suites.md
     - 5. Constructing the Toolchain:
       - 5.1. Introduction: constructing-the-toolchain-and-the-chroot-environment/constructing-the-toolchain/introduction.md
       - 5.2. Toolchain Technical Notes: constructing-the-toolchain-and-the-chroot-environment/constructing-the-toolchain/toolchain-technical-notes.md
