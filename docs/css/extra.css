@@ -206,3 +206,7 @@ img {
 .md-typeset code {
   font-size: 1.1em
 }
+
+.md-typeset .codehilite pre {
+  font-size: 1.0em
+}
