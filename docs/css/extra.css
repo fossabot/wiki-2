@@ -202,3 +202,7 @@ img {
 .md-typeset table:not([class]) th {
   background-color: #b69460
 }
+
+.md-typeset code {
+  font-size: 1.1em
+}
