@@ -42,6 +42,7 @@ Fortunately, most build times are shorter than the one for `binutils`.
     the following values:
 
     1.   `MAKEFLAGS=-j$(nproc)` which in our case is `MAKEFLAGS=-j8`:
+
          This sets the number of `MAKEFLAGS` equal to the number of the current
          threads on your host system. Some say that this will enable parallel
          building while giving some room for other applications to run as there
@@ -49,6 +50,7 @@ Fortunately, most build times are shorter than the one for `binutils`.
          or freeze.
 
     2.   `MAKEFLAGS=-j$(nproc + 1)` which in our case is `MAKEFLAGS=-j9`:
+
          This sets the number of `MAKEFLAGS` equal to the number of the current
          threads on your host system plus one. This is similar to the first
          option, but it ensures that the overhead thread is also used in the
@@ -57,6 +59,7 @@ Fortunately, most build times are shorter than the one for `binutils`.
          such as a web browser.
 
     3.   `MAKEFLAGS=-j$(nproc * 1.5)` which in our case is `MAKEFLAGS=-j12`:
+
          Some say that in order for parallel building to work properly you need
          to set to set your `MAKEFLAGS` equal to the number of current threads
          times 1.5.
@@ -70,5 +73,5 @@ Fortunately, most build times are shorter than the one for `binutils`.
 
     Analyzing the output of the build process will also be more difficult
     because the lines of different threads will be interleaved. If you run into
-    a problem with a build step, revert back to a single thread build to
-    properly analyze the error messages.
+    a problem with a build step, revert back to a single thread build
+    (`MAKEFLAGS=-j1`) to properly analyze the error messages.
