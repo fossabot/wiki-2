@@ -63,16 +63,105 @@ the most educational value at the same time.
 
 Some key technical points of how the toolchain is constructed:
 
-1.   To automatically construct the toolchain you need to make sure that you're
-     in the `/home/glaucus` directory by running:
+1.   Slightly adjusting the name of the working platform, by changing the
+     "vendor" field target tuple by way of the `$TUPL` environment variable
+     which is automatically exported when running the
+     `/home/glaucus/scripts/toolchain/run.sh`, ensures that both cross
+     `binutils` and `gcc` produce a compatible cross-linker and cross-compiler.
+     Instead of producing binaries for another architecture, the cross-linker
+     and cross-compiler will produce binaries compatible with the current
+     hardware.
 
-    ```Shell
-    cd /home/glaucus
-    ```
+2.   The toolchain libraries are cross-compiled, because a cross-compiler by its
+     nature cannot rely on anything from its host system. This method removes
+     potential contamination of the final system by lessening the chance of host
+     headers or libraries being incorporated into system cerata.
 
-    Then execute the `run.sh` script located in the
-    `/home/glaucus/scripts/toolchain` directory:
+3.   Careful manipulation of the `gcc` source tells the compiler which target
+     dynamic linker will be used.
 
-    ```Shell
-    time dash /home/glaucus/scripts/toolchain/run.sh
-    ```
+`binutils` is installed first because `gcc`'s configure script performs various
+feature tests on the assembler and linker to determine which software features
+to enable or disable. This is more important than one might first realize.
+
+An incorrectly configured `gcc` or `musl` can result in a subtly broken
+toolchain, where the impact of such breakage might not show up until near the
+end of the build of an entire distribution. In most cases, a test suite failure
+will usually highlight this error before too much additional work is performed.
+
+`binutils` installs its assembler and linker in two locations, `$TOOL/bin` and
+`$TOOL/$TUPL/bin`. The tools in one location are hard linked to the other. An
+important facet of the linker is its library search order. Detailed information
+can be obtained from `ld` by passing it the `--verbose` flag.
+
+For example, an:
+
+```Shell
+ld --verbose | grep SEARCH
+```
+
+will illustrate the current search paths and their order. It shows which files
+are linked by `ld` by compiling a dummy program and passing the `--verbose`
+switch to the linker.
+
+Another example is:
+
+```Shell
+gcc dummy.c -Wl,--verbose 2>&1 | grep succeeded
+```
+
+which will show all the files successfully opened during the linking.
+
+The next ceras installed is `gcc`. An example of what can be seen during its
+run of configure is:
+
+```Shell
+checking what assembler to use... /toolchain/x86_64-pc-linux-musl/bin/as
+checking what linker to use... /toolchain/x86_64-pc-linux-musl/bin/ld
+```
+
+This is important for the reasons mentioned above. It also demonstrates that
+`gcc`'s configure script does not search the `$PATH` directories to find which
+utilities to use. However, during the actual operation of `gcc` itself, the same
+search paths are not necessarily used. To find out which standard linker `gcc`
+will use, run:
+
+```Shell
+gcc -print-prog-name=ld
+```
+
+Detailed information can be obtained from `gcc` by passing it the `-v` command line
+option while compiling a dummy program. For example:
+
+```Shell
+gcc -v dummy.c
+```
+
+will show detailed information about the preprocessor, compilation, and assembly
+stages, including `gcc`'s included search paths and their order.
+
+Next installed are sanitized `linux-headers`. These allow the standard C library
+(`musl`) to interface with features that the `linux` kernel will provide.
+
+The next ceras installed is `musl`. The most important considerations for
+building `musl` are `gcc`, `binutils` and `linux-headers`. The compiler
+is generally not an issue since `musl` will always use the compiler relating to
+the `$CROSS_COMPILE` variable; which in our case, compiler will be
+`x86_64-pc-linux-musl-`.
+
+During the native construction of `binutils`, we are able to utilize the
+`--with-lib-path` configure switch to control `ld`'s library search path.
+
+For the native construction of `gcc`, its sources also need to be modified to
+tell `gcc` to use the new dynamic linker. Failure to do so will result in the
+`gcc` programs themselves having the name of the dynamic linker from the host
+system's `/usr/lib` (or `/lib`) directory embedded into them, which would defeat
+the goal of getting away from the host.
+
+From this point onwards, the toolchain is self-contained and self-hosted. Chroot
+cerata belonging  will all be constructed against the new `musl` in `$TOOL`.
+
+Upon entering the chroot environment, the first major ceras to be installed is
+`musl`, due to its self-sufficient nature mentioned above. Once system `musl`is
+installed into `/usr`, we will perform a quick adjustment of the toolchain
+defaults, and then proceed in to envenomate the final system glaucus.
