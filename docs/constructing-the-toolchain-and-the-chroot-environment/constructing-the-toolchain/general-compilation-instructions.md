@@ -264,7 +264,8 @@ shortly):
 
 !!! important
     The build instructions assume that the [Host System Requirements](
-    constructing-the-toolchain-and-the-chroot-environment/preparing-the-host-system/host-system-requirements/), including symbolic links, have been set properly:
+    constructing-the-toolchain-and-the-chroot-environment/preparing-the-host-system/host-system-requirements/),
+    including symbolic links, have been set properly:
 
     * `bash` is the shell in use.
 
