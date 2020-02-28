@@ -117,14 +117,14 @@ Licenses:
 *   LGPL-3.0-only
 
 ## 3.2.8. bison
-Version: 3.5.1
+Version: 3.5.2
 
-URL: <https://ftpmirror.gnu.org/bison/bison-3.5.1.tar.xz>
+URL: <https://ftpmirror.gnu.org/bison/bison-3.5.2.tar.xz>
 
 Size: 2.2M
 
-SHA-512 Sum: f5a075608c563652181e6804cdd280761a05b88f41f4b287d49bbe4c18b08724b
-057ff95c07dfa3fddb5c95de8b229db76821e9d197d4bec206102f62cb390d8
+SHA-512 Sum: f8d213fa58f04ce8e55437ecfa378869a85c07234223dc89dbe7533b7f663a105
+eddaebd0902fb46b258048400c09d4b8181f033932b74aa41bca13ea5c120aa
 
 Licenses:
 
@@ -485,14 +485,14 @@ License:
 *   GPL-2.0-only
 
 ## 3.2.32. kmod
-Version: 26
+Version: 27
 
-URL: <https://cdn.kernel.org/pub/linux/utils/kernel/kmod/kmod-26.tar.xz>
+URL: <https://cdn.kernel.org/pub/linux/utils/kernel/kmod/kmod-27.tar.xz>
 
 Size: 540K
 
-SHA-512 Sum: 3ca276c6fc13c2dd2220ec528b8dc4ab4edee5d2b22e16b6f945c552e51f74342
-c01c33a53740e6af8c893d42bd4d6f629cd8fa6e15ef8bd8da30cb003ef0865
+SHA-512 Sum: e0513094935333fca1fb4c3e3493b232507a579ab00a6457cc9ed3e928363d05a
+ad80634fb65a8287a336bf9895194c7be8ddc41bb088a6c2cca44fc1bfbdb6c
 
 Licenses:
 
@@ -530,29 +530,29 @@ Licenses:
 *   GPL-3.0-or-later
 
 ## 3.2.35. libarchive
-Version: 3.4.1
+Version: 3.4.2
 
-URL: <https://www.libarchive.org/downloads/libarchive-3.4.1.tar.xz>
+URL: <https://www.libarchive.org/downloads/libarchive-3.4.2.tar.xz>
 
-Size: 4.6M
+Size: 4.5M
 
-SHA-512 Sum: 45da32179ffa781cd007151ccde85bdc62a543ea85ed3a6910aeb91f3f7095a7d
-53a8490e5fac4773c202282d8f04e5cad41f57e78af6edc4f6e407f59c0deec
+SHA-512 Sum: c144f88e3149923e2657ab3f6c9d3457ac779f856b1c6934b0012dbb3a8cefaa2
+873061f3060720ee52d67a78aa5e0afff17e0f1282c032322f35a9bbfcccc57
 
 License:
 
 *   BSD-2-Clause
 
 ## 3.2.36. libcap
-Version: 2.31
+Version: 2.32
 
 URL: <https://cdn.kernel.org/pub/linux/libs/security/linux-privs/libcap2/libca
-p-2.31.tar.xz>
+p-2.32.tar.xz>
 
 Size: 100K
 
-SHA-512 Sum: 9f0ef665a52e77356d6028abdead3c3cf75f97406ac09d60a33500222428c581d
-8aaa7d25d7eb9051d9c73ebfaefa7af5581430e1ecc1dfea73398a3ac7cbc3a
+SHA-512 Sum: e2325cf0a1d0509c49336f7e5760e5b339c889cdde8d6c359197aed711423f951
+ad390a2a3dd4943b03afe152ad8502ea1db9d7ef247148b93e93a3c4895a019
 
 Licenses:
 
@@ -638,14 +638,14 @@ License:
 *   LGPL-2.1-only
 
 ## 3.2.42. linux
-Version: 5.5.4
+Version: 5.5.6
 
-URL: <https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.5.4.tar.xz>
+URL: <https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.5.6.tar.xz>
 
 Size: 106M
 
-SHA-512 Sum: 87af2cf22b3c8884ce276a92d7a538a723b8fdbac9e40ec243ca78576afb4baa8
-a1d07b49d9bc9c773f020858121285d6a60a384fccbb0c82433a5597f133456
+SHA-512 Sum: faa2c4687d7da6eb4d0db08492408b64558166bd4918e88c01b1fa34893aaeee8
+dc352aa10dc8f58628f224bdfee7a7f8e88b98da771463237898845f45407e3
 
 License:
 
@@ -806,14 +806,14 @@ Licenses:
 *   LGPL-3.0-or-later
 
 ## 3.2.53. musl
-Version: 1.1.24
+Version: 1.2.0
 
-URL: <https://www.musl-libc.org/releases/musl-1.1.24.tar.gz>
+URL: <https://www.musl-libc.org/releases/musl-1.2.0.tar.gz>
 
 Size: 0.9M
 
-SHA-512 Sum: 8987f1e194ea616f34f4f21fe9def28fb7f81d7060e38619206c6349f79db3bbb
-76bae8b711f5f9b8ed038799c9aea1a4cbec69e0bc4131e246203e133149e77
+SHA-512 Sum: 58bd88189a6002356728cea1c6f6605a893fe54f7687595879add4eab283c8692
+c3b031eb9457ad00d1edd082cfe62fcc0eb5eb1d3bf4f1d749c0efa2a95fec1
 
 License:
 
