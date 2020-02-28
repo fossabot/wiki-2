@@ -38,7 +38,7 @@ nav:
       - 5.2. Toolchain Technical Notes: constructing-the-toolchain-and-the-chroot-environment/constructing-the-toolchain/toolchain-technical-notes.md
       - 5.3. General Compilation Instructions: constructing-the-toolchain-and-the-chroot-environment/constructing-the-toolchain/general-compilation-instructions.md
     - 6. Constructing the Chroot Environment:
-      - 6.1. Introduction: constructing-the-toolchain-and-the-chroot-environment/constructing-the-chroot-environment/stripping.md
+      - 6.1. Introduction: constructing-the-toolchain-and-the-chroot-environment/constructing-the-chroot-environment/introduction.md
       - 6.2. Stripping: constructing-the-toolchain-and-the-chroot-environment/constructing-the-chroot-environment/stripping.md
       - 6.3. Changing Ownership: constructing-the-toolchain-and-the-chroot-environment/constructing-the-chroot-environment/changing-ownership.md
   - III. Constructing and Envenomating glaucus:
