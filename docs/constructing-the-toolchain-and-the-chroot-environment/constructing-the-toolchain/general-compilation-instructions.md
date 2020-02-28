@@ -225,12 +225,12 @@ shortly):
   
   2. cerata with modified sources (to preserve the original sources directory)
 
-  !!! warning
-      Please ensure that `rsync` is installed on your host system because the
-      copying process uses it to quickly revert target sources directories
-      located at the temporary `/home/glaucus/temporary/$stage/sources`
-      directory to their original clean state (as fetched from upstream) as
-      located in the `/home/glaucus/sources` directory.
+!!! warning
+    Please ensure that `rsync` is installed on your host system because the
+    copying process uses it to quickly revert target sources directories
+    located at the temporary `/home/glaucus/temporary/$stage/sources`
+    directory to their original clean state (as fetched from upstream) as
+    located in the `/home/glaucus/sources` directory.
 
 * **configure_$stage()** - This function is responsible for configuring the
   sources regardless of the method they're configured in. The configure function
@@ -254,7 +254,6 @@ shortly):
   case **configure_$stage()** should be left empty (`:`)).
 
 !!! note
-
     During the compilation of most cerata, there will be several warnings that
     scroll by on the screen. These are normal and can safely be ignored. These
     warnings are as they appear—warnings about deprecated, but not invalid, use
@@ -278,11 +277,3 @@ shortly):
 * **install_$stage()** - This function is reponsible for installing what the
   build function compiled. Any additional compatibility symlinks are created
   here as well.
-
-* Several cerata are patched before compilation patch is needed to circumvent a
-  problem. A patch is often needed in both this and the next chapter, but
-  sometimes in only one or the other.  Therefore, do not be concerned if
-  instructions for a downloaded patch seem to be missing. Warning messages about
-  offset or fuzz may also be encountered when applying a patch. Do not worry
-  about these warnings, as the patch was still successfully applied.
-
