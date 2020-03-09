@@ -544,15 +544,15 @@ License:
 *   BSD-2-Clause
 
 ## 3.2.36. libcap
-Version: 2.32
+Version: 2.33
 
 URL: <https://cdn.kernel.org/pub/linux/libs/security/linux-privs/libcap2/libca
-p-2.32.tar.xz>
+p-2.33.tar.xz>
 
-Size: 100K
+Size: 112K
 
-SHA-512 Sum: e2325cf0a1d0509c49336f7e5760e5b339c889cdde8d6c359197aed711423f951
-ad390a2a3dd4943b03afe152ad8502ea1db9d7ef247148b93e93a3c4895a019
+SHA-512 Sum: bb5bdc1318b524ee607026038dff7c1c621f1710fa07f8c341b1f86761cb086d3
+2b93d7a12dbe4256d4440ee984143db8659d2679330e221ce184d7048c142b4
 
 Licenses:
 
@@ -638,14 +638,14 @@ License:
 *   LGPL-2.1-only
 
 ## 3.2.42. linux
-Version: 5.5.6
+Version: 5.5.8
 
-URL: <https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.5.6.tar.xz>
+URL: <https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.5.8.tar.xz>
 
 Size: 106M
 
-SHA-512 Sum: faa2c4687d7da6eb4d0db08492408b64558166bd4918e88c01b1fa34893aaeee8
-dc352aa10dc8f58628f224bdfee7a7f8e88b98da771463237898845f45407e3
+SHA-512 Sum: 0aecbfaae033834db85d17349aeb22d62168244eb2a5db627c7bcab8a2800dfae
+6e21dda29efb29c3d78fae99ef673d22471ea433098a870113e2db67252a093
 
 License:
 
@@ -727,15 +727,15 @@ License:
 *   GPL-2.0-only
 
 ## 3.2.48. meson
-Version: 0.53.1
+Version: 0.53.2
 
-URL: <https://github.com/mesonbuild/meson/releases/download/0.53.1/meson-0.53.
-1.tar.gz>
+URL: <https://github.com/mesonbuild/meson/releases/download/0.53.2/meson-0.53.
+2.tar.gz>
 
 Size: 1.4M
 
-SHA-512 Sum: 0c96c354bcd7e6945473c7df0ddff929ef2bae9c2dfc7b48c6c6174c7f2be4f79
-8398929f9c4d5986aa5fc882305ff76371ad0d65a499f058b33b05ff7025859
+SHA-512 Sum: 005340f0faaa8fc5065b916355af6c2e3311da59fae67c781eb9ca47c5430dca8
+5e9aa1052c5e92b3da8546b4b197fe623a6d48b073a24e05535141ba59ecac7
 
 License:
 
@@ -1021,14 +1021,14 @@ Licenses:
 *   GPL-2.0-or-later
 
 ## 3.2.67. python
-Version: 3.8.1
+Version: 3.8.2
 
-URL: <https://www.python.org/ftp/python/3.8.1/Python-3.8.1.tar.xz>
+URL: <https://www.python.org/ftp/python/3.8.2/Python-3.8.2.tar.xz>
 
 Size: 17M
 
-SHA-512 Sum: d41381848cc1ec8009643b71875f395a9ac2c8e12a5b1efef33caf8a9e99a337c
-790d4354695c85352d11b62092ae372b5af62f78724363fcbf3504ff9a6ddca
+SHA-512 Sum: ca37ad0e7c5845f5f228566aa8ff654a8f428c7d4a5aaabff29baebb0ca3219b3
+1ba8bb2607f89e37cf3fc564f023b8407e53a4f2c47bd99122c1cc222613e37
 
 License:
 
