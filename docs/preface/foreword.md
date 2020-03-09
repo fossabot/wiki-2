@@ -360,7 +360,7 @@ The final system:
 | -                        | musl-obstack        |
 | elfutils-libelf          | elfutils-libelf     |
 | libffi                   | libffi              |
-| openssl                  | openssl             |
+| openssl                  | libressl            |
 | python                   | python              |
 | ninja                    | samurai             |
 | meson                    | meson               |
@@ -395,8 +395,8 @@ The final system:
 | -                        | s6-boot-scripts     |
 | linux                    | linux               |
 
-As you can see, in many of LFS's packages were replaced with alternatives that
-are either lighter or provided better performance.
+As you can see, many of LFS's packages were replaced by alternatives that are
+lighter or provide better performance.
 
 ## i.11. The Aim of This Book
 This book aims to provide you with the knowledge necessary to build glaucus from
