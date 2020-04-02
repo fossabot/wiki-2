@@ -37,7 +37,7 @@ Fortunately, most build times are shorter than the one for `binutils`.
     `/home/glaucus/scripts/flags` equal to `-j1` which is the sane default.
 
     To enable parallel building, you need to first know the number of threads on
-    your host system. Simple run `nproc` and it'll return that number (let's say
+    your host system. Simply run `nproc` and it'll return that number (let's say
     that `nproc` returned a value of `8`). Now you can set `MAKEFLAGS` to one of
     the following values:
 

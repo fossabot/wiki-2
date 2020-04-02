@@ -232,10 +232,10 @@ installed as a system package.
 This isn't ideal and can be shortened down by carefully inspecting what LFS does
 with its toolchain. You need to build a cross binutils then build a stripped
 down static version of cross GCC (we'll call it cross GCC), then we'll use this
-cross toolchain to natively compile linux-headers, musl, libstdc++-v3, binutils
-and gcc. This is identical to the way LFS builds its toolchain, but apparently
-everyone was building cross GCC twice when using musl (apparently this is how
-CLFS was building its GCC and musl toolchain).
+cross toolchain to natively compile musl, libstdc++-v3, binutils and gcc. This
+is identical to the way LFS builds its toolchain, but apparently everyone was
+building cross GCC twice when using musl (apparently this is how CLFS was
+building its GCC and musl toolchain).
 
 This shortened the times needed to build GCC to 3, one for the cross toolchain
 (and it's a fast build as most of this GCC's features are disabled, except for
@@ -265,7 +265,7 @@ The native toolchain:
 
 | Linux From Scratch (LFS) | glaucus             |
 | ------------------------ | ------------------- |
-| linux-headers            | linux-headers       |
+| linux-headers            | -                   |
 | glibc                    | musl                |
 | libstdc++-v3             | libstdc++-v3        |
 | binutils                 | binutils            |
@@ -360,7 +360,7 @@ The final system:
 | -                        | musl-obstack        |
 | elfutils-libelf          | elfutils-libelf     |
 | libffi                   | libffi              |
-| openssl                  | openssl             |
+| openssl                  | libressl            |
 | python                   | python              |
 | ninja                    | samurai             |
 | meson                    | meson               |
@@ -395,8 +395,8 @@ The final system:
 | -                        | s6-boot-scripts     |
 | linux                    | linux               |
 
-As you can see, in many of LFS's packages were replaced with alternatives that
-are either lighter or provided better performance.
+As you can see, many of LFS's packages were replaced by alternatives that are
+lighter or provide better performance.
 
 ## i.11. The Aim of This Book
 This book aims to provide you with the knowledge necessary to build glaucus from

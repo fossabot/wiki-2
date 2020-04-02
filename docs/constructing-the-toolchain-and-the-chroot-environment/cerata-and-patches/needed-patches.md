@@ -1423,15 +1423,7 @@ SHA-512 Sum: d1ec0d322036073f436cdc326d9f3798c2f0dfc2e5222d6703dbb479ebd4f87ce
 6ea40e28a67a329f4c44c2c5f45a0fc3ee62d5ef2925766bd3358a8835a95c4
 
 ## 3.3.12. kmod
-### 3.3.12.1. 0001-Link-against-libcrypto-not-all-of-openssl.patch
-Source: arch
-
-Size: 2.9K
-
-SHA-512 Sum: c6d7bef860be23b91ef386a0056b4a31eeac2ad79a28ee38600aa8a2f3556ef11
-a8a5e7688dcb44230a9cd8a99eb9cc5f5a2cd9d406abd8c670d2d9a635c7b69
-
-### 3.3.12.2. strndupa.patch
+### 3.3.12.1. strndupa.patch
 Source: void
 
 Size: 359B
@@ -1495,16 +1487,16 @@ Source: clear
 
 Size: 784B
 
-SHA-512 Sum: 09bdc432ba59737d3a72cda9819fba14cf5ed3349ac54640bfca43cd39dbcfa3e
-7a979d034462bad3c6900fb4a4a2571ecc29e1f30b391fc781bd704c27aff41
+SHA-512 Sum: 10de11ed9709eb150af0db283797c3df91ced76c6f53a8fd74ca30af9b8968880
+42ff86f02cec35d854da4f708f716e5a22fcf0df89de99fea30de190d78a7ed
 
 ### 3.3.15.1. 0105-ksm-wakeups.patch
 Source: clear
 
 Size: 1.8K
 
-SHA-512 Sum: 5edf1a114119308b413c8b988fc55d5389f75a215f77817728c4ad8d175eb4b0c
-6b61cf211d56361fda556aec17827f1bb63baecec6052bff42ef8615d48eb60
+SHA-512 Sum: c4eca1b4fe68e71b8e4d2a20c86cf7290f0678c109a1aa47de85454a9ddec5069
+24740c8f06c393172cb6039e4fb1c5cca62ad8829df593d596849b9545050c1
 
 ### 3.3.15.1. 0106-intel_idle-tweak-cpuidle-cstates.patch
 Source: clear
@@ -1535,8 +1527,8 @@ Source: clear
 
 Size: 985B
 
-SHA-512 Sum: 712aced83eced04bf7e0296121fa072e780a17a4df690263474cecbef6c766a41
-b21cf1be561cc7c2fc30aa46f83c59f08e3525464647a449904ee022572e464
+SHA-512 Sum: 854ded093545d4b67e5cc3b136674f413b7cac42c20974ed47863b4aff2e78fa6
+6c544c6946ad1ec2832f4ba22bca4dc5ef7210116a0fe628d39399f4d17363c
 
 ### 3.3.15.1. 0112-ipv4-tcp-allow-the-memory-tuning-for-tcp-to-go-a-lit.patch
 Source: clear
@@ -1617,6 +1609,14 @@ Size: 25K
 
 SHA-512 Sum: 52b14ef834769d2b4567e756a4485995acd2e3f5b989cbb53f9b113b42ff67b73
 6bbcb284b95fe15c9efb846fd12320a26a131e4ce9af50b521114d274b472f1
+
+### 3.3.15.5. 0001-aufs-20200203.patch
+Source: sirlucjan
+
+Size: 0.9MB
+
+SHA-512 Sum: 487c062cf2d0e12faa2797547b25bd0a6cfca7e0df1bf8b7e9f23ca253477aff0
+f889467e6223dd1992ea322034ede09929e67a03317fad457d908aac8ebac14
 
 ### 3.3.15.5. 0001-compat-provide-compat_ptr-on-all-architectures.patch
 Source: sirlucjan
