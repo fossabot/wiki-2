@@ -5,6 +5,7 @@ https://app.codacy.com/gh/glaucuslinux/wiki?utm_source=github.com&utm_medium=ref
 [![Join the chat at https://gitter.im/glaucuslinux/wiki](
 https://badges.gitter.im/glaucuslinux/wiki.svg)](
 https://gitter.im/glaucuslinux/wiki?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fglaucuslinux%2Fwiki.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fglaucuslinux%2Fwiki?ref=badge_shield)
 
 glaucus's wiki
 
@@ -22,3 +23,7 @@ glaucus's wiki
 * [NotABug](https://notabug.org/glaucuslinux/wiki)
 * [SourceForge](https://git.code.sf.net/p/glaucuslinux/wiki)
 * [SourceHut](https://git.sr.ht/~glaucuslinux/wiki)
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fglaucuslinux%2Fwiki.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fglaucuslinux%2Fwiki?ref=badge_large)
